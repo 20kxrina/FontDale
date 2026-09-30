@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FontDale | Newsletter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="logo-container">
+
+            <img src="asset/FontDale Logo (All Page).png"
+                 alt="FontDale Logo"
+                 class="brand-logo">
+
+            <h1>FONTDALE</h1>
+
+        </div>
+
+        <nav class="nav-menu">
+
+            <a href="index.html"
+               class="nav-link">
+               Home
+            </a>
+
+            <a href="directory.html"
+               class="nav-link">
+               Directory
+            </a>
+
+            <a href="events.html"
+               class="nav-link">
+               Events
+            </a>
+
+            <a href="about.html"
+               class="nav-link">
+               About Us
+            </a>
+
+            <a href="newsletter.html"
+               class="nav-link active">
+               Newsletter
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main class="content-wrapper">
+
+        <section class="page-section">
+
+            <div class="form-container">
+
+                <h2>
+                    Join The Circle
+                </h2>
+
+                <p class="form-subtitle">
+
+                    Be the first to receive exclusive previews of haute couture arrivals and private exhibitions. 
+
+Early members enjoy priority invitations to curated experiences at the Pavilion.
+
+                </p>
+
+                <form id="newsletterForm"
+                      onsubmit="return validateForm(event)">
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name
+                        </label>
+
+                        <input type="text"
+                               id="fullName"
+                               placeholder="Enter your full name">
+
+                        <span class="error-message"
+                              id="err-name">
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input type="text"
+                               id="email"
+                               placeholder="example@domain.com">
+
+                        <span class="error-message"
+                              id="err-email">
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input type="text"
+                               id="phone"
+                               placeholder="Minimum 10 digits">
+
+                        <span class="error-message"
+                              id="err-phone">
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="interest">
+                            Topic of Interest
+                        </label>
+
+                        <select id="interest">
+
+                            <option value="">
+                                -- Select Category --
+                            </option>
+
+                            <option value="fashion">
+                                Haute Couture & Fashion
+                            </option>
+
+                            <option value="jewelry">
+                                Jewelry & Luxury
+                            </option>
+
+                            <option value="dining">
+                                Dining & Cafés
+                            </option>
+
+                        </select>
+
+                        <span class="error-message"
+                              id="err-interest">
+                        </span>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="frequency">
+                            Update Preferences
+                        </label>
+
+                        <select id="frequency">
+
+                            <option value="">
+                                -- Select Frequency --
+                            </option>
+
+                            <option value="daily">
+                                Daily Updates
+                            </option>
+
+                            <option value="weekly">
+                                Weekly Newsletter
+                            </option>
+
+                            <option value="monthly">
+                                Monthly Digest
+                            </option>
+
+                        </select>
+
+                        <span class="error-message"
+                              id="err-frequency">
+                        </span>
+
+                    </div>
+
+                    <div class="form-group checkbox-group">
+
+                        <input type="checkbox"
+                               id="agree">
+
+                        <label for="agree">
+
+                            I agree to receive
+                            exclusive invitations,
+                            premium updates,
+                            and curated event information.
+
+                        </label>
+
+                    </div>
+
+                    <span class="error-message"
+                          id="err-agree">
+                    </span>
+
+                    <button type="submit"
+                            class="btn-submit">
+
+                        Join The Circle
+
+                    </button>
+
+                </form>
+
+                <div id="success-toast"
+                     class="toast hidden">
+
+                    Welcome to the Inner Circle!
+                    Check your email shortly.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+
+                <h4>FontDale</h4>
+
+                <p>
+                    Arcadia Circle<br>
+                    Jakarta, Indonesia
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Inquiries</h4>
+
+                <p>
+                    (021) 2255 2552<br>
+                    cs@fontdale.co.id
+                </p>
+
+            </div>
+
+            <div class="footer-col">
+
+                <h4>Opening Hours</h4>
+
+                <p>
+                    Weekdays: 10:00 AM - 10:00 PM<br>
+                    Weekends & Public Holidays:
+                    09:00 AM - 11:00 PM
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
